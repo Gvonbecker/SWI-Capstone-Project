@@ -1,0 +1,50 @@
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\appsettings.Development.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\appsettings.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\libman.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.staticwebassets.runtime.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.exe
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.deps.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.runtimeconfig.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\SWI_Form Client.pdb
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\EntityFramework.SqlServer.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\EntityFramework.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\System.Web.Providers.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\Newtonsoft.Json.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\System.Drawing.Common.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\System.Security.Permissions.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.csproj.AssemblyReference.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.AssemblyInfoInputs.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.AssemblyInfo.cs
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.csproj.CoreCompileInputs.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.RazorAssemblyInfo.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.RazorAssemblyInfo.cs
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets\msbuild.SWI_Form Client.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets\msbuild.build.SWI_Form Client.props
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.SWI_Form Client.props
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.SWI_Form Client.props
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets.pack.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets.build.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\staticwebassets.development.json
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\scopedcss\bundle\SWI_Form Client.styles.css
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\scopedcss\projectbundle\SWI_Form Client.bundle.scp.css
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.csproj.CopyComplete
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\refint\SWI_Form Client.dll
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.pdb
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\SWI_Form Client.genruntimeconfig.cache
+C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\obj\Release\net6.0\ref\SWI_Form Client.dll

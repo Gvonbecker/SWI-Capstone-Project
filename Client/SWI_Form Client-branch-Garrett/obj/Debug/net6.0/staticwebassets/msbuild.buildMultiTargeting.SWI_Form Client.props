@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SWI_Form Client.props" />
+</Project>

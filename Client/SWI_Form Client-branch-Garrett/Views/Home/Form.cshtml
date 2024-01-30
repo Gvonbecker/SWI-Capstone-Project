@@ -1,0 +1,524 @@
+﻿@using SWI_Form_Client.Models;
+
+@model FormViewModels
+
+@{
+    ViewBag.Title = "Form";
+}
+
+@using (Html.BeginForm("SubmitForm", "Home", FormMethod.Post)) {
+    <div class="container-xxl" style="padding-bottom:30px;">
+    <h1 style="text-align:center;">Quality Check Form</h1>
+    <div class="container text-center" style="padding-top:5px; padding-bottom:30px;">
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                Quality Event
+            </div>
+            <div class="col">
+               
+            </div>
+            <div class="col">
+
+                <label>Log#</label>
+                @Html.TextBoxFor(m => m.Form.log_num, new {@class = "form-control"})
+                
+            </div>
+        </div>
+        <div style="text-align:left" class="row">
+            <div class="col">
+                Event Information
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div style="text-align:left" class="row">
+            <div style="height:100px;" class="col">
+                
+                <label for="staff_name">Name of Staff:</label>
+
+                   
+                        @Html.TextBoxFor(m => m.Form.staff_first, new {placeholder = "First Name"})
+                       
+
+                        @Html.TextBoxFor(m => m.Form.staff_last, new { placeholder = "Last Name"})                
+                
+                
+                
+            </div>
+            <div class="col">
+                
+                <label for="job_title">Job Title:</label>
+                @Html.TextBoxFor(m => m.Form.staff_job_title, new {@class = "form-control"})
+
+            </div>
+            <div class="col"> 
+
+                <label for="date">Date:</label>
+                 <input id="date" class="form-control" data-val="true" data-val-required="The event_date field is required." name="date" type = "date" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+
+            </div>
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                <br />
+            </div>
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div style="height:100px;" class="col">
+                <label>Location Where Event Found</label>
+                <br />
+                    @Html.TextBoxFor(m => m.Form.event_location, new {@class = "form-control"})
+            </div>
+
+            <div class="col">
+
+
+                <label>Hourly Quality Check Performed</label>
+                <br />
+
+                
+                
+                
+                @Html.RadioButtonFor(m => m.Form.hourly_check,true)
+                <label for="Yes">Yes</label>
+               
+               
+                <br />
+
+                @Html.RadioButtonFor(m => m.Form.hourly_check,false)
+
+                <label for="No">No</label>
+                 
+                 <br />               
+            </div>
+
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div style="height:100px;" class="col">
+                <label>Was Production Stopped</label>
+                <br />
+
+                @Html.RadioButtonFor(m => m.Form.production_stopped,true)
+                <label for="Yes">Yes</label>
+
+                <br />
+
+                @Html.RadioButtonFor(m => m.Form.production_stopped,false)
+                <label for="No">No</label>
+
+                <br />
+            </div>
+            <div class="col">
+                <!--Could Not find this in the api Status : Resolved-->
+                <label>Was Management Notified</label>
+                <br />
+
+
+                @Html.RadioButtonFor(m => m.Form.management_notified,true)
+                <label for="Yes">Yes</label>
+
+                <br />
+
+                @Html.RadioButtonFor(m => m.Form.management_notified,false)
+                <label for="No">No</label>
+
+                <br />
+            </div>
+
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                <br />
+            </div>
+
+
+        </div>
+        <div style="text-align:left" class="row">
+            <div class="col">
+            
+                <label for="date_last_trained">Date(s) of last training related to this event:</label>
+                <br />
+               
+                @Html.TextAreaFor(m => m.Form.date_last_trained, new {@class = "form-control", rows = "3", cols = "100"})
+               
+                <br />               
+            </div>
+
+
+        </div>
+        <div style="text-align:left" class="row">
+            <div class="col">
+
+                <label for="procedures_followed">When the event occurred were all procedure being followed? If not explain</label>
+                <br />
+             
+                @Html.TextAreaFor(m => m.Form.procedures_description, new {@class = "form-control", rows = "2", cols = "100"})
+                <br />
+            </div>
+
+
+        </div>
+        <div style="text-align:left" class="row">
+            <div class="col">
+
+                <label for="event_description">Describe Fully How Event Occured:</label>
+                <br />
+               
+                @Html.TextAreaFor(m => m.Form.event_description, new {@class = "form-control", rows = "25", cols = "100"})
+
+                <br />
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                <br />
+            </div>
+
+
+        </div>
+        <!--#region Multiple Causes-->
+        <div style="text-align:left" class="row">
+            <div class="col">
+                Multiple Causes:
+            </div>
+            <div class="col">
+                Check all that apply and explain
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                <br />
+                    <!--Dont see the cuases in the models from api-->
+
+                    @Html.CheckBoxFor(m => m.equipment_failure_description.check)
+                <label for="equipment_failure">Equipment Failure</label>
+                <br />
+                    @Html.TextAreaFor(m => m.equipment_failure_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                    @Html.CheckBoxFor(m => m.process_description.check)
+                <label for="process">Process</label>
+                <br />
+                    @Html.TextAreaFor(m => m.process_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                @Html.CheckBoxFor(m => m.tools_description.check)
+                <label for="tools">Tools</label>
+                <br />
+                    @Html.TextAreaFor(m => m.tools_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                @Html.CheckBoxFor(m => m.housekeeping_description.check)
+                <label for="housekeeping">Housekeeping</label>
+                <br />
+                    @Html.TextAreaFor(m => m.housekeeping_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                @Html.CheckBoxFor(m => m.instructions_description.check)
+                <label for="instructions">Instructions</label>
+                <br />
+                    @Html.TextAreaFor(m => m.instructions_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+                <br />
+
+                @Html.CheckBoxFor(m => m.management_description.check)
+                <label for="management">Management</label>
+                <br />
+                    @Html.TextAreaFor(m => m.management_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                @Html.CheckBoxFor(m => m.training_description.check)
+                <label for="training">Training</label>
+                <br />
+                    @Html.TextAreaFor(m => m.training_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+                @Html.CheckBoxFor(m => m.other_description.check)
+                <label for="other">Other</label>
+                <br />
+                    @Html.TextAreaFor(m => m.other_description.form_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+
+                <br />
+
+            </div>
+
+
+        </div>
+        <!--#endregion -->
+
+        <div style="text-align:left" class="row">
+            <div class="col">
+                Root Causes (contributing factors):
+                    
+                <br />
+                    <label for="inattention_to_detail">Innattention To Detail</label>
+                    @Html.CheckBoxFor(m => m.Inattention.check)
+                 @Html.TextAreaFor(m => m.Inattention.root_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+                
+                <br />
+                <label for="procedure_not_followed">Procedure not followed</label>
+                    @Html.CheckBoxFor(m => m.Procedure.check)
+                 @Html.TextAreaFor(m => m.Procedure.root_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+                
+                <br />
+                    <label for="other">Other (explain)</label>
+                @Html.CheckBoxFor(m => m.Other.check)
+                 @Html.TextAreaFor(m => m.Other.root_cause_description, new {@class = "form-control", rows = "2", cols = "100"})
+                
+
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                Do additional work rules or procedure need to be implemented
+
+                <br />
+
+                 @Html.RadioButtonFor(m => m.Form.additional_rules_needed,true)
+                <label>Yes</label>
+
+                <br />
+
+                 @Html.RadioButtonFor(m => m.Form.additional_rules_needed,false)
+                <label>No</label>
+
+                <br />
+            </div>
+
+
+        </div>
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                If yes explain:
+
+                <br />
+
+                    @Html.TextAreaFor(m => m.Form.additional_rules_description, new {@class = "form-control", rows = "5", cols = "100"})
+
+                <br />
+
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                <br />
+
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                <label for="quality_control_sig">Quality Control</label>
+
+                <br />
+
+                    @Html.RadioButtonFor(m => m.Form.quality_control_sig,true, new {id = "true"})
+
+                <br />
+
+            </div>
+            <div class="col">
+
+
+            </div>
+
+            <div style="outline:solid thin" class="col">
+                <label for="date">Date:</label>
+                    <input type="date" id="date" placeholder="" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            </div>
+
+
+        </div>
+
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                <label for="production_manager_sig">Signature of Production Manager</label>
+
+                <br />
+
+                    @Html.RadioButtonFor(m => m.Form.production_manager_sig,true, new {})
+
+                <br />
+
+            </div>
+            <div class="col">
+            </div>
+
+            <div style="outline:solid thin" class="col">
+                <label for="date">Date:</label>
+                    <input type="date" id="date" placeholder="" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            </div>
+
+
+        </div>
+
+        <div style="text-align:center" class="row">
+
+            <div class="col">
+                <h2>Job Information</h2>
+
+            </div>
+
+        </div>
+        <div style="text-align:left" class="row">
+            
+            <div class="col">
+                <br />
+                <div class = "form-group row">
+
+                     @Html.LabelFor(m => m.Form.shop_order_num,"Shop Order #:", new { @class = "col-sm-5 col-form-label" })
+                <div class = "col-sm-2">
+
+                    @Html.TextAreaFor(m => m.Form.shop_order_num, new { rows = "1", cols = "15"})
+                   
+                </div>
+                </div>
+
+               
+
+                <div class = "form-group row">
+
+
+                    @Html.LabelFor(m => m.Form.billing_unit,"Billing Unit:", new { @class = "col-sm-5 col-form-label" })
+
+                    <div class = "col-sm-2">
+                
+                        @Html.TextAreaFor(m => m.Form.billing_unit, new { rows = "1", cols = "15"})
+                        
+                </div>
+               
+                </div>
+
+                <div class = "form-group row">
+
+
+                        @Html.LabelFor(m => m.Form.billing_cost_per,"Billing cost per unit:", new { @class = "col-sm-5 col-form-label" })
+
+                        <div class = "col-sm-2">
+
+                            @Html.TextAreaFor(m => m.Form.billing_cost_per, new { rows = "1", cols = "15"})
+                        </div>
+
+                <br />
+                   
+              </div>
+              <br/>
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+        <div style="text-align:center" class="row">
+
+            <div class="col">
+                <h2>Time Required to Correct Order</h2>
+
+            </div>
+
+        </div>
+
+        <div style="text-align:left" class="row">
+
+            <div class="col">
+                <br />
+
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Form.supervisor_ct,"Number Of Staff:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Form.supervisor_ct, new {rows = "1", cols = "15"})
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Form.employee_ct,"Number Of Employees:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Form.employee_ct, new {rows = "1", cols = "15"})
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Form.inspected_qty,"Total Quantity Inspected:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Form.inspected_qty, new {rows = "1", cols = "15"})
+                        </div>
+
+                    </div>
+
+            </div>
+
+            <div class="col">
+                <br/>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Form.supervisor_time,"Time Spent per Staff:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Form.supervisor_time, new {rows = "1", cols = "15"})
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Form.employee_time,"Time Spent per Employee:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Form.employee_time, new {rows = "1", cols = "15"})
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row" style="padding-bottom:40px;">
+                        @Html.LabelFor(m => m.Form.reworked_qty,"Total Quantity Reworked:", new { @class = "col-sm-5 col-form-label" })
+                        <div class="col-sm-2" style="padding-bottom:40px;">
+                            @Html.TextAreaFor(m => m.Form.reworked_qty, new {rows = "1", cols = "15"})
+                        </div>
+                       
+                    </div>
+                    
+                <br/>
+            </div>
+                <button type="submit" class="btn btn-success" value="Login">Submit Form</button>
+        </div>
+            
+
+            
+    </div>
+        
+    
+
+</div>
+}

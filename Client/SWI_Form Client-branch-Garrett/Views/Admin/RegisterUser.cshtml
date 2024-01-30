@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Login
+@using (Html.BeginForm("RegisterUser", "Admin", FormMethod.Post))
+{
+
+
+    <div class="login_container">
+        <fieldset enabled>
+
+            <legend>New User</legend>
+
+            <div class="mb-3">
+
+                @Html.TextBoxFor(m => m.username, new {@class = "form-control", placeholder = "Username"})
+                @Html.ValidationMessageFor(m => m.username)
+
+            </div>
+
+            <div class="mb-3">
+
+                @Html.TextBoxFor(m => m.password, new {@class = "form-control" , placeholder = "Password"})
+                
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary" value="Login">Create User</button>
+
+        </fieldset>
+        @if (TempData["LoginError"] != null)
+        {
+            <div>@TempData["LoginError"]</div>
+        }
+    </div>
+}

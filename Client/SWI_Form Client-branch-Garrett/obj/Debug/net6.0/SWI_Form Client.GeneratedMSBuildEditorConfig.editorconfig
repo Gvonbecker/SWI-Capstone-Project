@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SWI_Form_Client
+build_property.RootNamespace = SWI_Form_Client
+build_property.ProjectDir = C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\garre\OneDrive\Desktop\SWI Form Project\SWI_Form_Project\Client\SWI_Form Client-branch-Garrett
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Admin/RegisterUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVnaXN0ZXJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Auth/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/Forms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/SingleForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaW5nbGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Home/SubmitForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWJtaXRGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/garre/OneDrive/Desktop/SWI Form Project/SWI_Form_Project/Client/SWI_Form Client-branch-Garrett/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r7dphw4r0a

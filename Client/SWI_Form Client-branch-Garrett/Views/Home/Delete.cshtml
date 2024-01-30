@@ -1,0 +1,11 @@
+﻿<div class="login_container" style="outline:solid thin">
+    <h1>Are You Sure?</h1>
+    <p>This action cannot be undone.</p>
+
+    <div class="mb-3">
+        <form action="/Home/ActuallyDelete/@ViewBag.id">
+            <input type="hidden" name="id" value="@ViewBag.id"/>
+            <button class="delete-btn">Yes, delete this form</button>
+        </form>
+    </div>
+</div>

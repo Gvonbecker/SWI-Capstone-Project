@@ -1,0 +1,52 @@
+﻿@model Login_View_Model
+
+@if(Model != null){
+    if (Model.loginReminder)
+    {
+        <div class="container-sm" style="text-align:center; background-color:white;">
+       
+           
+                <span class="badge rounded-pill text-bg-danger" style="color:red;">
+                    Either your login has expired, you are not logged in, or your account does not have permission to access this page.
+                    Please log in.
+                </span>
+       
+       </div>
+       <br/>
+    }
+}
+    
+
+@using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+{
+            
+
+            <div class="login_container">
+            <fieldset enabled>
+
+                <legend>Login</legend>
+
+                <div class="mb-3">
+
+                    @Html.TextBoxFor(m => m.username, new {@class = "form-control", placeholder = "Username"})
+                    @Html.ValidationMessageFor(m => m.username)
+
+                </div>
+
+                <div class="mb-3">
+
+                     @Html.PasswordFor(m => m.Password, new {@class = "form-control", placeholder = "Password"})
+                     @Html.ValidationMessageFor(m => m.Password)
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary" value="Login">Login</button>
+
+            </fieldset>
+        @if (TempData["LoginError"] != null)
+        {
+            <div>@TempData["LoginError"]</div>
+        }
+            </div>   
+}

@@ -1,0 +1,72 @@
+﻿@using SWI_Form_Client.Models;
+
+@model FormListResponse
+
+<form action="/Home/Forms">
+    <input name="page" placeholder="1" value="@Model.page" />
+    <input name="pageLength" placeholder="5" value="@Model.pageLength" />
+
+    <select name="sortBy">
+        <option value="none">No Sort</option>
+        <option value="lognum">Log Number</option>
+        <option value="lognumdesc">Log Number Descending</option>
+
+        <option value="eventdate">Event Date</option>
+        <option value="eventdatedesc">Event Date Descending</option>
+
+
+        <option value="desc">Descending</option>
+        <option value="none">Ascending</option>
+    </select>
+    <select name="filterBy">
+        <option value="none">No Filter</option>
+        <option value="hourlycheck">Hourly Check</option>
+        <option value="productionstopped">Production Stopped</option>
+        <option value="additionalrulesneeded">Additional Rules Needed</option>
+        <option value="qualitycontrolsig">Quality Control Signed</option>
+        <option value="productionmanagersig">Production Manager Signed</option>
+        <option value="hourlycheckfalse">No Hourly Check</option>
+        <option value="productionstoppedfalse">No Production Stopped</option>
+        <option value="additionalrulesneededfalse">No Additional Rules Needed</option>
+        <option value="qualitycontrolsigfalse">No Quality Control Signed</option>
+        <option value="productionmanagersigfalse">No Production Manager Signed</option>
+    </select>
+
+    <button>Apply Filter</button>
+</form>
+
+<div>
+    
+    <div class="form-list_element">
+        <div class="form-list_element_content">
+            <div><p>Log Num</p></div>
+            <div><p>Employee First Name</p></div>
+            <div><p>Employee Last Name</p></div>
+            <div><p>Form Date</p></div>
+            
+        </div>
+        <div>
+            <div><p>Delete Form</p></div>
+        </div>
+    </div>
+    @if (Model.forms != null)
+    {
+        @foreach (FormModel x in Model.forms )
+        {
+            <div class="form-list_element">
+                <a class="form-list_element_content" href="/Home/SingleForm/@x.form_id">
+                    <div><p>@x.log_num</p></div>
+                    <div><p>@x.staff_first</p></div>
+                    <div><p>@x.staff_last</p></div>
+                    <div><p>@x.event_date</p></div>
+                </a>
+                <a class="form-list_element_content_btn delete-btn" href="/Home/Delete/@x.form_id">Delete</a>
+            </div>
+        }
+    } else
+    {
+      <div class="form-list_element">
+          <p>No forms found.</p>
+      </div>  
+    }
+</div>
